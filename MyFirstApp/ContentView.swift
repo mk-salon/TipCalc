@@ -37,7 +37,7 @@ struct ContentView: View {
                         }
                     }
                 }
-                Section(header: Text("Сколько чаевых вы хотите оставить?")) {
+                Section(header: Text("Сколько чаевых хотите оставить?")) {
                     Picker("Tip percentage", selection: $tipPercentage) {
                         ForEach(0..<tipPercentages.count) {
                             Text("\(self.tipPercentages[$0])%")
